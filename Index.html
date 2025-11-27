@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDGHomes</title>
+  <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./Assets/sdg logo.png" alt="Logo">
+    </div>
+
+    <nav id="desktopNav">
+      <a href="Index.html">Home</a>
+      <a href="Property.html">Find a House</a>
+      <a href="#">Agents</a>
+      <a href="About Us.html">About Us</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="actions" id="desktopActions">
+      <button class="login" id="login">Login</button>
+      <button class="list-home" id="listHome">List Your Home</button>
+    </div>
+
+    <div class="menu-icon" id="menuIcon">☰</div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="Index.html">Home</a>
+    <a href="Property.html">Find a House</a>
+    <a href="#">Agents</a>
+    <a href="About Us.html">About Us</a>
+    <a href="#">Contact</a>
+    <button class="login" href="Login.html"> Login </button>
+    <button type="button" class="list-home" onclick="listHome()">List Your Home</button>
+  </div>
+
+
+  <section class="hero">
+
+    <div class="slide active" id="slide1">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Find Homes, Apartments & Agents You Can Trust in Osun</h1>
+        <p>Explore verified listings and discover homes that fit your lifestyle, your family, and your budget.
+        </p>
+
+        <div class="btn-group">
+          <button class="primary">View All Properties</button>
+          <button class="secondary">Talk to an Agent</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide2">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Your Trusted Home Partner in Osun State</h1>
+        <p>We make finding and owning your dream home simple, secure, and personal.</p>
+
+        <div class="btn-group">
+          <button class="primary">Learn More</button>
+          <button class="secondary">Meet the Team</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide3">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>We help people get homes & renting with good price in Osun State</h1>
+        <p>Transparent, safe, and simple house hunting in SDGHomes.</p>
+
+        <div class="btn-group">
+          <div class="hero-search">
+            <input type="text" placeholder="Search by Address, City Street, Zip" />
+            <button> 🔍 Search</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DOTS -->
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <div class="about-left">
+      <h2>We Have Been Successfully <br>
+        Providing our Services <br> For 9 years</h2>
+      <p>
+        Find Houses in Osogbo, Search Faster, Better & <br>
+        Smarter at SDGHomes Now! The Complete Overview
+      </p>
+
+      <div class="about-stats">
+        <div class="stat-box">
+          <h3 class="stat1"> </h3>
+          <p>500+ <br> Customer</p>
+        </div>
+
+        <div class="stat-box">
+          <h3 class="stat2"></h3>
+          <p>10+ <br>Partners</p>
+        </div>
+
+        <div class="stat-box">
+          <h3 class="stat3"></h3>
+          <p>200+ <br>House</p>
+        </div>
+
+        <div class="stat-box">
+          <h3 class="stat4"></h3>
+          <p> 1M+ <br>Reach</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-right" aria-hidden="true"></div>
+  </section>
+
+  <!-- SERVICES CARDS -->
+  <section class="service-cards">
+    <div class="service-text">
+      <h2> What Services We Provide <br>That Help People </h2>
+      <p> Discover a range of modern apartments designed to fit every <br>
+        lifestyle, from family sized comfort to smart, independent living</p>
+    </div>
+
+    <div class="service">
+      <div class="service-card buy">
+        <div class="icon"></div>
+        <h3>Buy Property</h3>
+        <p>Find 100+ latest house for <br>
+          sale in Ocotober, 2025. <br>
+          Search by price, size, <br>
+          location</p>
+      </div>
+      <div class="service-card sell">
+        <div class="icon1"></div>
+        <h3>Sell Property</h3>
+        <p>Sale is a transfer of ownership <br>
+          in exchange for a price paid or <br>
+          promised or promised or part <br>
+          paid and part promised </p>
+      </div>
+      <div class="service-card rent">
+        <div class="icon2"></div>
+        <h3>Rent Properties</h3>
+        <p>Residential rental property <br>
+          refers to homes that are <br>
+          purchased by an investor and <br>
+          inhabited by teneant</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST PROPERTIES -->
+  <!-- FEATURED PROPERTIES -->
+  <section class="featured-section">
+    <h3>Featured Properties</h3>
+  
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-type="all">All</button>
+      <button class="filter-btn" data-type="apartments">Apartments</button>
+      <button class="filter-btn" data-type="self">Self-contain</button>
+      <button class="filter-btn" data-type="short">ShortLet</button>
+      <button class="filter-btn" data-type="duplex">Duplex</button>
+    </div>
+  
+    <div class="property-grid">
+  
+      <div class="property-maincard" data-type="apartments">
+        <div class="property-img"></div>
+  
+        <div class="verify"> ✔ Verified</div>
+  
+        <div class="type">6 Bedroom Apartment</div>
+        <p class="locate">🗺️ Elizabeth Estate, Osun State</p>
+  
+        <div class="feature">
+          <span>🛏 6 Beds</span>
+          <span>🛁 5 Bath</span>
+        </div>
+  
+        <div class="spa">
+          <h4 class="price">₦1,500,000/Year</h4>
+  
+          <a href="property-details.html" class="detail-btn">View Details</a>
+        </div>
+      </div>
+  
+      <div class="property-maincard" data-type="apartments">
+        <div class="property-img house2"></div>
+  
+        <div class="verify"> ✔ Verified</div>
+  
+        <div class="type">5 Bedroom Duplex</div>
+        <p class="locate">🗺️ Iwo, Osun State</p>
+  
+        <div class="feature">
+          <span>🛏 5 Beds</span>
+          <span>🛁 5 Bath</span>
+        </div>
+  
+        <div class="spa">
+          <h4 class="price">₦900,000/Year</h4>
+  
+          <a href="property-details.html" class="detail-btn">View Details</a>
+        </div>
+      </div>
+  
+      <div class="property-maincard" data-type="short">
+        <div class="property-img house3"></div>
+  
+        <div class="verify"> ✔ Verified</div>
+  
+        <div class="type">4 Bedroom Apartment</div>
+        <p class="locate">🗺️ Ogooluwa, Osun State</p>
+  
+        <div class="feature">
+          <span>🛏 4 Beds</span>
+          <span>🛁 5 Bath</span>
+        </div>
+  
+        <div class="spa">
+          <h4 class="price">₦900,000/Year</h4>
+  
+          <a href="property-details.html" class="detail-btn">View Details</a>
+        </div>
+      </div>
+  
+      <div class="property-maincard" data-type="duplex">
+        <div class="property-img house4"></div>
+  
+        <div class="verify"> ✔ Verified</div>
+  
+        <div class="type">3 Bedroom Self Contain</div>
+        <p class="locate">🗺️ Ijebu-Ilesa, Osun State</p>
+  
+        <div class="feature">
+          <span>🛏 3 Beds</span>
+          <span>🛁 3 Bath</span>
+        </div>
+  
+        <div class="spa">
+          <h4 class="price">₦600,000/Year</h4>
+  
+          <a href="property-details.html" class="detail-btn">View Details</a>
+        </div>
+      </div>
+  
+      <div class="property-maincard" data-type="self">
+        <div class="property-img house5"></div>
+  
+        <div class="verify"> ✔ Verified</div>
+  
+        <div class="type" data-type="short">2 Bedroom Apartment</div>
+        <p class="locate">🗺️ Elizabeth Estate, Osun State</p>
+  
+        <div class="feature">
+          <span>🛏 2 Beds</span>
+          <span>🛁 3 Bath</span>
+        </div>
+  
+        <div class="spa">
+          <h4 class="price">₦300,000/Year</h4>
+  
+          <a href="property-details.html" class="detail-btn">View Details</a>
+        </div>
+      </div>
+  
+      <div class="property-maincard">
+        <div class="property-img house6"></div>
+  
+        <div class="verify"> ✔ Verified</div>
+  
+        <div class="type">Room & Palour Apartment</div>
+        <p class="locate">🗺️ Ilesa, Osun State </p>
+  
+        <div class="feature">
+          <span>🛏 1 Beds</span>
+          <span>🛁 2 Bath</span>
+        </div>
+  
+        <div class="spa">
+          <h4 class="price">₦400,000/Year</h4>
+  
+          <a href="property-details.html" class="detail-btn">View Details</a>
+        </div>
+      </div>
+  
+      <div class="property-maincard">
+        <div class="property-img house7"></div>
+  
+        <div class="verify"> ✔ Verified</div>
+  
+        <div class="type">6 Bedroom Apartment</div>
+        <p class="locate">🗺️ Owode Ede, Osun State</p>
+  
+        <div class="feature">
+          <span>🛏 6 Beds</span>
+          <span>🛁 5 Bath</span>
+        </div>
+  
+        <div class="spa">
+          <h4 class="price">₦1,500,000/Year</h4>
+  
+          <a href="property-details.html" class="detail-btn">View Details</a>
+        </div>
+      </div>
+  
+      <div class="property-maincard">
+        <div class="property-img house8"></div>
+  
+        <div class="verify"> ✔ Verified</div>
+  
+        <div class="type">5 Bedroom Apartment</div>
+        <p class="locate">🗺️ G.R.A, Osun State</p>
+  
+        <div class="feature">
+          <span>🛏 5 Beds</span>
+          <span>🛁 5 Bath</span>
+        </div>
+  
+        <div class="spa">
+          <h4 class="price">₦1,300,000/Year</h4>
+  
+          <a href="property-details.html" class="detail-btn">View Details</a>
+        </div>
+      </div>
+  
+  
+    </div>
+  
+  
+  
+    <div class="see-more">
+      <a href="./Property.html">See More Properties →</a>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="works-section">
+    <h2>How Easily It Works For You</h2>
+    <p class="works-sub">
+      At <strong>SDGHomes</strong>, we make finding and moving into your new home
+      simple, fast, and stress-free
+    </p>
+
+    <div class="works-cards">
+      <div class="work-card search">
+        <div class="icon"></div>
+        <h4>Search Places</h4>
+        <p>
+          Explore verified apartments, houses and rooms listed on SDGHomes.
+          From 4-bedroom family homes to cozy single rooms.
+        </p>
+      </div>
+
+      <div class="work-card select">
+        <div class="icon"></div>
+        <h4>Select Best Choices</h4>
+        <p>
+          Compare and shortlist apartments that meet your budget and needs.
+          See key details like pricing, space, and location.
+        </p>
+      </div>
+
+      <div class="work-card agent">
+        <div class="icon"></div>
+        <h4>Agent Dealings</h4>
+        <p>
+          Connect directly with verified agents for viewings, documentation
+          and deal finalization.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== AGENTS SECTION ======== -->
+  <section class="agents-section">
+    <h2>Find your dream home<br>through our agents</h2>
+    <p class="agent-text">
+      At <strong>SDGHOMES</strong>, we believe finding your dream home should be simple,
+      safe <br> and personal. That's why we connect you directly with trusted real estate
+      agents who know your area best.
+    </p>
+
+    <div class="agents-box">
+
+      <div class="agent-card">
+        <div class="agent-img img1"></div>
+        <h4>AbdulRasheed Olayinka</h4>
+        <p>Oke-Fia, Osun State</p>
+        <button class="agent-btn">Contact</button>
+      </div>
+
+      <div class="agent-card">
+        <div class="agent-img img2"></div>
+        <h4>Adebayo Olajumoke</h4>
+        <p>Ring Road, Osun State</p>
+        <button class="agent-btn">Contact</button>
+      </div>
+
+      <div class="agent-card">
+        <div class="agent-img img3"></div>
+        <h4>Tunde Ogunleye</h4>
+        <p>Alekuwodo, Osun State</p>
+        <button class="agent-btn">Contact</button>
+      </div>
+
+      <div class="agent-card">
+        <div class="agent-img img4"></div>
+        <h4>Kayode Adisa</h4>
+        <p>Dada Estate, Osun State</p>
+        <button class="agent-btn">Contact</button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======== CLIENT TESTIMONIALS ======== -->
+  <section class="client-section">
+    <h2>What Our Clients Say</h2>
+
+    <div class="client-grid">
+
+      <div class="client-left slider-container">
+      <div class="slider-wrapper">
+
+        <div class="client-card">
+          <h4>Abiola Awan (Oke-Fia)</h4>
+          <p>Finding a home in Osun state felt impossible until I came across SDGHOMES...</p>
+        </div>
+
+        <div class="client-card">
+          <h4>Mrs. Ajibola (Ile-Ife)</h4>
+          <p>I listed my house on SDGHOMES and got serious inquiries within a week...</p>
+        </div>
+
+        <div class="client-card">
+          <h4>Mr. Adewale (Osogbo)</h4>
+          <p>The platform is reliable, user-friendly, and their agents are top-notch.</p>
+        </div>
+
+        <div class="client-card">
+          <h4>Racheal (OAU Campus)</h4>
+          <p>I found my hostel easily without stress. Their support team is amazing!</p>
+        </div>
+
+        <div class="client-card">
+          <h4>Tunde (Ogbomoso)</h4>
+          <p>Fast service, trusted listings, and smooth communication. Highly recommended.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="client-right">
+      <h3>Need Help?</h3>
+      <p>Our team is here to assist you from first contact to final keys</p>
+      <button>Contact Support</button>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- ======== ABOUT SECTION ======== -->
+  <section class="about-sec">
+    <h2>About SDGHomes</h2>
+    <h3>Building Trust. Delivering Comfort.</h3>
+
+    <p>
+      SDGHomes was founded to make homes finding simpler and more transparent.
+      We're committed to connecting people with verified apartments and reliable
+      agents who care.
+    </p>
+  </section>
+
+
+  <!-- ======== FAQ SECTION ======== -->
+  <section class="faq-section">
+    <h2>Frequently Ask Questions</h2>
+
+    <div class="faq-box">
+      <div class="faq-item">
+        <button class="faq-btn">How do I make appointment? </button>
+        <div class="faq-content">
+          <p>You can make appointment by contacting any agent on the website.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn">What services do you provide?</button>
+        <div class="faq-content">
+          <p>We connect you to verified homes and trusted real estate agents.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn">What is your mission?</button>
+        <div class="faq-content">
+          <p>Our mission is to make home finding simple and transparent.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn">How do I get in touch with support?</button>
+        <div class="faq-content">
+          <p>You can reach support from the contact button on the site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT/FORM SECTION -->
+  <section class="contact-section">
+    <div class="contact-left">
+      <h2>Get in Touch</h2>
+
+      <form id="contactForm" novalidate>
+        <input type="text" placeholder="Full Name" id="name">
+        <input type="email" placeholder="Email Address" id="email">
+        <input type="text" placeholder="Phone Number" id="phone">
+        <textarea placeholder="Write your message" id="message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="map-box" aria-hidden="true"></div>
+  </section>
+
+  <!-- NEWS SECTION -->
+  <section class="news-section">
+    <h2>Latest News & Updates </h2>
+    <p> Stay informed about property trends and housing opportunities in Osun State.</p>
+
+
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="n1"> </div>
+        <p>Oct 25, 2025 • Market Update</p>
+        <h4> Finding the Right Agent in Osun State </h4>
+        <h5> Learn how to identify a trustworthy agent and secure genuine property deals.</h5>
+        <button> Read More ➡️ </button>
+      </div>
+
+      <div class="news-card">
+        <div class="n2"> </div>
+        <p>OOct 18, 2025 • Buyer Tips</p>
+        <h4> 5 Things to Check Before Buying Land in Osun </h4>
+        <h5> Avoid fake agents and verify your documents with SDGHOMES support.</h5>
+        <button> Read More ➡️ </button>
+      </div>
+
+      <div class="news-card">
+        <div class="n3"> </div>
+        <p>Oct 18, 2025 • Buyer Tips</p>
+        <h4> SDGHOMES Hosts Free Real Estate Seminar </h4>
+        <h5> Join our agents this weekend for a property talk on home financing..</h5>
+        <button> Read More ➡️ </button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-top">
+
+      <div class="footer-left">
+        <div class="footer-logo"></div>
+
+        <h4>EMAIL ADDRESS</h4>
+        <input type="text" placeholder="Enter Your Email Address" class="email-input">
+        <button class="subscribe-btn">Subscribe</button>
+
+        <p class="contact-title">Contacts information</p>
+
+        <div class="footer-socials">
+          <div class="social-icon fb"></div>
+          <div class="social-icon x"></div>
+          <div class="social-icon ig"></div>
+          <div class="social-icon ln"></div>
+        </div>
+      </div>
+
+      <div class="footer-mid">
+        <h4>SUPPORT</h4>
+        <p>We're Here to Help</p>
+        <p>Osogbo, Osun State<br>Nigeria.</p>
+        <p>support@sdghomes.ng</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>QUICK LINKS</h4>
+        <p> <a href="Index.html">Home</a></p>
+        <p>Apartments</p>
+        <p>Agents</p>
+        <p>About us</p>
+        <p>Contact us</p>
+        <p>FAQs</p>
+      </div>
+
+      <div class="footer-services">
+        <h4>OUR SERVICES</h4>
+        <p>Property Sales</p>
+        <p>Apartment Rentals</p>
+        <p>Agent Matching</p>
+        <p>Property Verification</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 SDGHOMES. All Rights Reserved.<br>
+        Your trusted home partner in Osun State. | info@sdghomes.com</p>
+
+      <p class="back-top"> ☝️👆🔺<br> BACK TO TOP</p>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="Home.js"></script>
+</body>
+
+</html>

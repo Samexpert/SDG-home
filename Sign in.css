@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.signup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.signup-img {
+  width: 500px;
+  height: 620px;
+  background-image: url("./Assets/IMG-20251118-WA0050.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.signup-box {
+  margin-top: 70px;
+  width: 100%;
+  max-width: 500px;
+  display: block;
+}
+
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.input,
+.input-character {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  outline-color: rgb(11, 151, 74);
+}
+
+.character {
+  font-size: 12px;
+  margin-top: 5px;
+  color: gray;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.signup label,
+h1 {
+  font-family: Arial, sans-serif;
+}
+
+.check-box label {
+  font-size: 12px;
+}
+
+.signup a {
+  color: black;
+  text-decoration: none;
+}
+
+.signupBtn {
+  border: none;
+  background-color: rgb(11, 151, 74);
+  color: white;
+  margin-top: 20px;
+  padding: 15px 0;
+  border-radius: 5px;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.signupBtn:hover {
+  transform: scale(1.02);
+}
+
+.alternative {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+  width: 100%;
+
+}
+
+.alternative div {
+  flex: 1;
+  height: 1px;
+  width: 50%;
+  border: 1px solid rgb(187, 178, 178);
+  margin-bottom: 50px;
+}
+
+.alternative span {
+  background: white;
+  padding: 0px 10px;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+
+/* Login page */
+
+.signin {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.signin-img {
+  width: 500px;
+  height: 600px;
+  background-image: url("./Assets/IMG-20251118-WA0050.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.signin-box {
+  margin-top: 70px;
+  width: 100%;
+  max-width: 500px;
+  display: block;
+}
+
+.signin-box form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.input,
+.input-character {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  outline-color: rgb(11, 151, 74);
+}
+
+.character {
+  font-size: 12px;
+  margin-top: 5px;
+  color: gray;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.signup label,
+h1 {
+  font-family: Arial, sans-serif;
+}
+
+.check-box label {
+  font-size: 12px;
+}
+
+.signup a {
+  color: black;
+  text-decoration: none;
+}
+
+.signinBtn {
+  border: none;
+  background-color: rgb(11, 151, 74);
+  color: white;
+  margin-top: 20px;
+  padding: 15px 0;
+  border-radius: 5px;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.signinBtn:hover {
+  transform: scale(1.02);
+}
+
+.alternative {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+  width: 100%;
+
+}
+
+.alternative div {
+  flex: 1;
+  height: 1px;
+  width: 50%;
+  border: 1px solid rgb(187, 178, 178);
+  margin-bottom: 50px;
+}
+
+.alternative span {
+  background: white;
+  padding: 0px 10px;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+.social-icons {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+}
+
+.icon.fb, .icon.google, .icon.apple {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+}
+
+/* SOCIAL ICONS */
+.icon.fb {
+  background-image: url("./Assets/fb\ icon.svg");
+}
+
+.icon.google {
+  background-image: url("./Assets/google\ icon.svg");
+}
+
+.icon.apple {
+  background-image: url("./Assets/apple\ icon.svg");
+}
+
+
+
+.paragraph {
+  width: 450px;
+  font-size: x-large;
+  margin-top: 40px;
+}
+
+
+.forget-password {
+  display: grid;
+  justify-content: end;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+
+.forget-password a {
+  text-decoration: none;
+  color: black;
+}
+
+.Create-acc {
+  text-align: center;
+  font-weight: bold;
+}
+
+.Create-acc a {
+  font-weight: normal;
+  text-decoration: none;
+  color: rgb(59, 187, 103);
+}
+
+
+@media (max-width: 890px) {
+    .signin .signup {
+        flex-direction: column;
+    }
+    .signin-img, .signup-img {
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* Reset Password Page */
+
+.auth-container {
+    display: flex;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.auth-left {
+    flex: 1;
+    padding: 60px;
+}
+
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline-color: #1e824c;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    background: #1e824c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    background: #14743f;
+}
+
+
+
+.bottom-text {
+    margin-top: 20px;
+}
+
+.bottom-text a {
+    text-decoration: none;
+    color: #1e824c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* List your Home Page */
+
+/* .property-section {
+    width: 100%;
+    padding: 50px 5%;
+    font-family: Arial, sans-serif;
+}
+
+.property-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.property-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.property-header p {
+    color: #555;
+    margin-top: 5px;
+}
+
+.property-toggle {
+    max-width: 450px;
+    margin: 0 auto 40px;
+    background: #e3e3e3;
+    border-radius: 8px;
+    display: flex;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 15px 0;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.toggle-btn.active {
+    background: #1E7A44;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.property-form {
+    width: 100%;
+}
+
+.form-row {
+    margin-bottom: 25px;
+}
+
+.form-row label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-row span {
+    color: red;
+}
+
+
+
+.icon-input select option {
+    background: #1E7A44;
+    color: #fff;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.icon-input {
+    display: flex;
+    align-items: center;
+    background: #1E7A44;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 10px;
+}
+
+.icon-input .icon {
+    margin-right: 10px;
+}
+
+.icon-input input,
+.icon-input select {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.icon-input select {
+    cursor: pointer;
+}
+
+.upload-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1E7A44;
+    padding: 18px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.upload-box input {
+    display: none;
+}
+
+.agreement {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.agreement p {
+    font-size: 14px;
+}
+
+.agreement a {
+    color: #1E7A44;
+}
+
+.submit-btn {
+    margin-top: 30px;
+    width: 100%;
+    background: #1E7A44;
+    padding: 16px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+/* @media (max-width: 900px) {
+
+    .three-input,
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .property-section {
+        padding: 40px 4%;
+    }
+}
+
+@media (max-width: 500px) {
+    .property-header h2 {
+        font-size: 26px;
+    }
+} */ 
