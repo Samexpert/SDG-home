@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.agentss {
+    margin: auto;
+    background-color: #f5f5f5;
+    padding: 50px 8%;
+}
+
+.olayinka {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+
+.agent-img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #16c961;
+    background-image: url(./Assets/img1.png);
+}
+
+.olayinka h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: bold;
+}
+
+.location {
+    margin-bottom: 16px;
+}
+
+.verify-bar {
+    width: 110px;
+    height: 8px;
+    background: #e3e3e3;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.verify-bar .bar {
+    width: 60%;
+    height: 100%;
+    border-radius: 20px;
+    background: #1faa59;
+}
+
+.verifed-icon {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    color: rgba(15, 128, 0, 0.897);
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.verify svg {
+    width: 20px;
+    height: 20px;
+}
+
+.verify {
+    color: #1faa59;
+    margin-bottom: 10px;
+}
+
+.small {
+    border-radius: 10px;
+    height: 20px;
+    width: 80px;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.contact-btn {
+    align-items: center;
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 8px;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: bold;
+    gap: 8px;
+    padding: 12px 24px;
+}
+
+.contact-btn:hover {
+    border-color: grey;
+    color: rgba(15, 128, 0, 0.897);
+}
+
+.about-agn {
+    margin: auto;
+    padding: 50px 5%;
+}
+
+
+
+.profile {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px
+}
+
+.about-text {
+    margin-bottom: 20px;
+}
+
+.he{
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.property {
+    display: flex;
+    gap: 15px;
+    margin: 20px 20px;
+    justify-content: center;
+}
+
+.property h3 {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.property img {
+    width: 30%;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+
+}
+
+.carousel-dots {
+    text-align: center;
+}
+
+.carousel-dots span {
+    width: 8px;
+    height: 8px;
+    background: #cfcfcf;
+    margin: 4px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.carousel-dots .active {
+    background: #000;
+}
+
+.down-sec{
+    padding: 50px 5%;
+}
+
+.review {
+    margin-bottom: 30px;
+}
+
+.review blockquote {
+    color: #555;
+    font-style: italic;
+    margin-left: 0;
+    border-left: 3px solid #ddd;
+    padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .contact-buttons {
+        flex-direction: grid;
+    }
+}

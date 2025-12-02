@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Home -- SDGHOMES </title>
+    <link rel="stylesheet" href="./SignIn.css">
+    <link rel="stylesheet" href="./Home.css">
+</head>
+
+<body>
+
+    <header>
+    <div class="logo">
+      <img src="./Assets/sdg logo.png" alt="Logo">
+    </div>
+
+    <nav id="desktopNav">
+      <a href="./index.html">Home</a>
+      <a href="./Property.html">Find a House</a>
+      <a href="./Agents.html">Agents</a>
+      <a href="./AboutUs.html">About Us</a>
+      <a href="./ContactUs.html">Contact</a>
+    </nav>
+
+    <div class="actions" id="desktopActions">
+      <button class="login" id="login" type="button">Login</button>
+      <button class="list-home" id="listHome">List Your Home</button>
+    </div>
+
+    <div class="menu-icon" id="menuIcon">☰</div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="./index.html">Home</a>
+    <a href="./Property.html">Find a House</a>
+    <a href="./Agents.html">Agents</a>
+    <a href="./AboutUs.html">About Us</a>
+    <a href="./ContactUs.html">Contact</a>
+    <button class="login" id="logins">Login</button>
+    <button class="list-home" id="listHomes">List Your Home</button>
+  </div>
+
+
+
+
+
+
+
+
+
+    <section class="property-section">
+
+        <div class="property-header">
+            <h2>List Your Property</h2>
+            <p>This is where you upload your property for verification before listing on our website</p>
+        </div>
+
+        <div class="property-toggle">
+            <button class="toggle-btn act" id="agentBtn">Agents</button>
+            <button class="toggle-btn" id="landlordBtn">Landlord</button>
+        </div>
+
+        <form id="propertyForm" class="property-form">
+
+            <div class="form-row ">
+                <label>Names: <span>*</span></label>
+                <div class="ico-input">
+                    <input type="text" placeholder="SURNAME" required> <br>
+                    <input type="text" placeholder="First Name" required>
+                </div>
+            </div>
+
+            <div class="form-row two-col">
+                <div>
+                    <label>Phone Number: <span>*</span></label>
+                    <div class="ico-input">
+                        <span class="ico">📞</span>
+                        <input type="text" placeholder="+234(0) 123456789" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Email Address: <span>*</span></label>
+                    <div class="ico-input">
+                        <span class="ico">📧</span>
+                        <input type="email" placeholder="user@email.com" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row two-col">
+                <div>
+                    <label>Address: <span>*</span></label>
+                    <div class="ico-input">
+                        <span class="ico">📍</span>
+                        <select id="lga" title="location" required>
+                            <option selected>Select state</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Property Address: <span>*</span></label>
+                    <div class="ico-input">
+                        <span class="ico">📍</span>
+                        <select title="select" required>
+                            <option >Oke-fia, Osun</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row two-col">
+                <div>
+                    <label>Proof of Property: <span>*</span></label>
+                    <label class="upload-box">
+                        <span>📎 Upload here…</span>
+                        <input type="file" required>
+                    </label>
+                </div>
+
+                <div>
+                    <label>Image & Video of Property: <span>*</span></label>
+                    <label class="upload-box">
+                        <span>➕ Upload here…</span>
+                        <input type="file" multiple required>
+                    </label>
+                </div>
+            </div>
+
+            <div class="agreement">
+                <input type="checkbox" title="checkbox" placeholder="check-box" required>
+                <p>I agree with <a href="#">Terms</a> and <a href="#">Privacy Policy</a> and hereby confirm that I am a
+                    verified agent or owner of the property listed</p>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+
+        </form>
+
+    </section>
+
+    <script src="./Home.js"></script>
+    <script src="./List.js"></script>
+
+
+</body>
+
+</html>

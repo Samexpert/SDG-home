@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Login</title>
-  <link rel="stylesheet" href="Sign in.css">
-  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="./SignIn.css">
+  <link rel="stylesheet" href="./Home.css">
 </head>
 
 <body>
@@ -17,29 +17,29 @@
     </div>
 
     <nav id="desktopNav">
-      <a href="Index.html">Home</a>
-      <a href="Property.html">Find a House</a>
-      <a href="#">Agents</a>
-      <a href="About Us.html">About Us</a>
-      <a href="#">Contact</a>
+      <a href="./index.html">Home</a>
+      <a href="./Property.html">Find a House</a>
+      <a href="./Agents.html">Agents</a>
+      <a href="./AboutUs.html">About Us</a>
+      <a href="./ContactUs.html">Contact</a>
     </nav>
 
     <div class="actions" id="desktopActions">
       <button class="login" id="login">Login</button>
-      <button class="list-home">List Your Home</button>
+      <button class="list-home" id="listHome">List Your Home</button>
     </div>
 
     <div class="menu-icon" id="menuIcon">☰</div>
   </header>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="Index.html">Home</a>
-    <a href="Property.html">Find a House</a>
-    <a href="#">Agents</a>
-    <a href="About Us.html">About Us</a>
-    <a href="#">Contact</a>
-    <button class="login" id="login">Login</button>
-    <button class="list-home">List Your Home</button>
+    <a href="./index.html">Home</a>
+    <a href="./Property.html">Find a House</a>
+    <a href="./Agents.html">Agents</a>
+    <a href="./AboutUs.html">About Us</a>
+    <a href="./ContactUs.html">Contact</a>
+    <button class="login" id="logins">Login</button>
+    <button class="list-home" id="listHomes">List Your Home</button>
   </div>
 
 
@@ -55,9 +55,12 @@
         <input class="input" type="text" placeholder="Enter your Email Address" required>
         <input class="input-character" type="password" placeholder="Password" required>
 
+
         <span class="forget-password">
-          <a href="ResetPassword.html">Forget your password?</a>
+          <a href="./ResetPassword.html">Forget your password?</a>
         </span>
+
+
 
         <button type="submit" class="signinBtn">Sign in</button>
       </form>
@@ -75,7 +78,7 @@
       </div>
 
       <p class="Create-acc">
-        Are you new? <a href="./Sign Up.html">Create an Account</a>
+        Are you new? <a href="./SignUp.html">Create an Account</a>
       </p>
     </div>
 
@@ -85,7 +88,7 @@
 
 
 
-   <!-- FOOTER -->
+  <!-- FOOTER -->
   <footer class="footer">
 
     <div class="footer-top">
@@ -116,11 +119,11 @@
 
       <div class="footer-links">
         <h4>QUICK LINKS</h4>
-        <p>Home</p>
-        <p>Apartments</p>
-        <p>Agents</p>
-        <p>About us</p>
-        <p>Contact us</p>
+        <p> <a href="./index.html">Home</a></p>
+        <p><a href="./Property.html">Apartments</a></p>
+        <p><a href="./Agents.html">Agents</a></p>
+        <p><a href="./AboutUs.html">About Us</a></p>
+        <p><a href="./ContactUs.html">Contact Us</a></p>
         <p>FAQs</p>
       </div>
 
@@ -142,6 +145,8 @@
     </div>
 
   </footer>
+
+  <script src="./Home.js"></script>
 </body>
 
 </html>

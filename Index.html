@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SDGHomes</title>
-  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="./Home.css">
 </head>
 
 <body>
@@ -15,11 +15,11 @@
     </div>
 
     <nav id="desktopNav">
-      <a href="Index.html">Home</a>
-      <a href="Property.html">Find a House</a>
-      <a href="#">Agents</a>
-      <a href="About Us.html">About Us</a>
-      <a href="#">Contact</a>
+      <a href="./index.html">Home</a>
+      <a href="./Property.html">Find a House</a>
+      <a href="./Agents.html">Agents</a>
+      <a href="./AboutUs.html">About Us</a>
+      <a href="./ContactUs.html">Contact</a>
     </nav>
 
     <div class="actions" id="desktopActions">
@@ -31,13 +31,13 @@
   </header>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="Index.html">Home</a>
-    <a href="Property.html">Find a House</a>
-    <a href="#">Agents</a>
-    <a href="About Us.html">About Us</a>
-    <a href="#">Contact</a>
-    <button class="login" href="Login.html"> Login </button>
-    <button type="button" class="list-home" onclick="listHome()">List Your Home</button>
+    <a href="./index.html">Home</a>
+    <a href="./Property.html">Find a House</a>
+    <a href="./Agents.html">Agents</a>
+    <a href="./AboutUs.html">About Us</a>
+    <a href="./ContactUs.html">Contact</a>
+    <button class="login" id="logins"> Login </button>
+    <button type="button" class="list-home" id="listHomes">List Your Home</button>
   </div>
 
 
@@ -494,7 +494,7 @@
 
 
   <!-- ======== FAQ SECTION ======== -->
-  <section class="faq-section">
+  <section class="faq-section" id="faq-section">
     <h2>Frequently Ask Questions</h2>
 
     <div class="faq-box">
@@ -612,12 +612,11 @@
 
       <div class="footer-links">
         <h4>QUICK LINKS</h4>
-        <p> <a href="Index.html">Home</a></p>
-        <p>Apartments</p>
-        <p>Agents</p>
-        <p>About us</p>
-        <p>Contact us</p>
-        <p>FAQs</p>
+        <p> <a href="./index.html">Home</a></p>
+        <p><a href="./Property.html">Apartments</a></p>
+        <p><a href="./Agents.html">Agents</a></p>
+        <p><a href="./AboutUs.html">About Us</a></p>
+        <p><a href="./ContactUs.html">Contact Us</a></p>
       </div>
 
       <div class="footer-services">
@@ -649,7 +648,7 @@
 
 
 
-  <script src="Home.js"></script>
+  <script src="./Home.js"></script>
 </body>
 
 </html>

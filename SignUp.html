@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create Account</title>
-  <link rel="stylesheet" href="Sign in.css">
+  <link rel="stylesheet" href="./SignIn.css">
   <link rel="stylesheet" href="./Home.css">
 </head>
 
@@ -17,11 +17,11 @@
     </div>
 
     <nav id="desktopNav">
-      <a href="Index.html">Home</a>
-      <a href="Property.html">Find a House</a>
-      <a href="#">Agents</a>
-      <a href="About Us.html">About Us</a>
-      <a href="#">Contact</a>
+      <a href="./index.html">Home</a>
+      <a href="./Property.html">Find a House</a>
+      <a href="./Agents.html">Agents</a>
+      <a href="./AboutUs.html">About Us</a>
+      <a href="./ContactUs.html">Contact</a>
     </nav>
 
     <div class="actions" id="desktopActions">
@@ -33,13 +33,13 @@
   </header>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="Index.html">Home</a>
-    <a href="Property.html">Find a House</a>
-    <a href="#">Agents</a>
-    <a href="About Us.html">About Us</a>
-    <a href="#">Contact</a>
-    <button class="login" id="login">Login</button>
-    <button class="list-home">List Your Home</button>
+    <a href="./index.html">Home</a>
+    <a href="./Property.html">Find a House</a>
+    <a href="./Agents.html">Agents</a>
+    <a href="./AboutUs.html">About Us</a>
+    <a href="./ContactUs.html">Contact</a>
+    <button class="login" href="./SignIn.html">Login</button>
+    <button class="list-home" id="listHomes">List Your Home</button>
   </div>
 
 
@@ -51,21 +51,21 @@
       <h1>Create Account</h1>
 
       <div>
-      <form action="">
-        <input type="text" class="input" placeholder="Enter your email" required>
-        <input type="text" class="input" placeholder="Enter your name" required>
-        <input type="password" class="input" placeholder="Enter your password" required>
-        <input type="password" class="input-character" placeholder="Confirm password" required>
+        <form action="">
+          <input type="text" class="input" placeholder="Enter your email" required>
+          <input type="text" class="input" placeholder="Enter your name" required>
+          <input type="password" class="input" placeholder="Enter your password" required>
+          <input type="password" class="input-character" placeholder="Confirm password" required>
 
-        <span class="character">Must be at least 8 characters</span>
+          <span class="character">Must be at least 8 characters</span>
 
-        <div class="check-box">
-          <input type="checkbox" id="termsCheckbox">
-          <label for="termsCheckbox">I agree with <a href="#">Terms</a> and <a href="#">Privacy Policy</a></label>
-        </div>
+          <div class="check-box">
+            <input type="checkbox" id="termsCheckbox">
+            <label for="termsCheckbox">I agree with <a href="#">Terms</a> and <a href="#">Privacy Policy</a></label>
+          </div>
 
-        <button type="submit" class="signupBtn">Create Account</button>
-      </form>
+          <button type="submit" class="signupBtn">Create Account</button>
+        </form>
       </div>
 
       <div class="alternative">
@@ -81,7 +81,7 @@
       </div>
 
       <p class="Create-acc">
-        Did you Already have an account? <a href="./Sign In.html">Sign in</a>
+        Did you Already have an account? <a href="./SignIn.html">Sign in</a>
       </p>
     </div>
   </section>
@@ -119,11 +119,11 @@
 
       <div class="footer-links">
         <h4>QUICK LINKS</h4>
-        <p>Home</p>
-        <p>Apartments</p>
-        <p>Agents</p>
-        <p>About us</p>
-        <p>Contact us</p>
+        <p> <a href="./index.html">Home</a></p>
+        <p><a href="./Property.html">Apartments</a></p>
+        <p><a href="./Agents.html">Agents</a></p>
+        <p><a href="./AboutUs.html">About Us</a></p>
+        <p><a href="./ContactUs.html">Contact Us</a></p>
         <p>FAQs</p>
       </div>
 
@@ -146,7 +146,7 @@
 
   </footer>
 
-  <script src="Home.js"></script>
+  <script src="./Home.js"></script>
 </body>
 
 </html>
