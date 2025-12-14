@@ -391,7 +391,7 @@ h1 {
 }
 
 .property-header p {
-    color: #555;
+    color: #ffffff;
     margin-top: 5px;
 }
 
@@ -434,7 +434,7 @@ h1 {
 }
 
 .form-row span {
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -495,7 +495,7 @@ h1 {
 .agreement {
     display: flex;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .agreement p {
